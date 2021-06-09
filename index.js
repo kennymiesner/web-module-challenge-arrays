@@ -134,9 +134,13 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(array, i){
-    let valueAtIndex = array[i];
-    return valueAtIndex;
+// function getFlavorByIndex(array, i){
+//     let valueAtIndex = array[i];
+//     return valueAtIndex;
+// }
+
+function getFlavorByIndex(array, number) {
+    return array[number];
 }
 
 console.log("Task 5:", getFlavorByIndex(originalFlavors, 2));
