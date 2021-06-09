@@ -45,12 +45,16 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
+// function copy(array) {
+//     const newArr = [...array];
+//     return newArr;
+// }
+
 function copy(array) {
-    const newArr = [...array];
-    return newArr;
+    return [...array];
 }
 
-console.log(`Task 1: ${copy(originalFlavors)}`);
+console.log("Task 1:", copy(originalFlavors));
 
 
 
@@ -75,7 +79,8 @@ function is31Flavors(array){
    }
 }
 
-console.log(`Task 2: ${is31Flavors(originalFlavors)}`);
+console.log("Task 2:", is31Flavors(originalFlavors));
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -95,7 +100,7 @@ function addFlavor(array, string){
     return array;
 }
 
-console.log(`Task 3: ${addFlavor(originalFlavors, "Rainbow Sherbert")}`);
+console.log("Task 3:", addFlavor(originalFlavors, "Rainbow Sherbert"));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -114,7 +119,7 @@ function removeLastFlavor(array){
    return array;
 }
 
-console.log(`Task 4: ${removeLastFlavor(originalFlavors)}`);
+console.log("Task 4:", removeLastFlavor(originalFlavors));
 
 
 
@@ -134,7 +139,7 @@ function getFlavorByIndex(array, i){
     return valueAtIndex;
 }
 
-console.log(`Task 5: ${getFlavorByIndex(originalFlavors, 2)}`);
+console.log("Task 5:", getFlavorByIndex(originalFlavors, 2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -158,7 +163,7 @@ function removeFlavorByName(array, string){
     return array;
 }
 
-console.log(`Task 6: ${removeFlavorByName(originalFlavors, "Rocky Road")}`);
+console.log("Task 6:", removeFlavorByName(originalFlavors, "Rocky Road"));
 
 
 
@@ -196,7 +201,7 @@ function filterByWord(array, string){
     return filteredFlavours;
 }
 
-console.log(`Task 7: ${filterByWord(originalFlavors, "Chocolate")}`);
+console.log("Task 7:", filterByWord(originalFlavors, "Chocolate"));
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
