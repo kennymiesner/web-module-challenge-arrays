@@ -152,9 +152,13 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(array, string){
+    let removedFlavor = array.indexOf(string);
+    array.splice(removedFlavor, 1);
+    return array;
 }
+
+console.log(`Task 6: ${removeFlavorByName(originalFlavors, "Rocky Road")}`);
 
 
 
@@ -217,7 +221,7 @@ Baskin Robins now offers new flavors, seasonal flavors, and even regional flavor
 from originalFlavors, currentFlavors, seasonalFlavors, and regionalFlavors and store it in an array called randomFlavors.
 
 Use the getRandomFlavors function and new arrays below to do the following:
-    1. Receive the four arrays with all the differnet flavors (originalFlavors is above, the others are below)
+    1. Receive the four arrays with all the different flavors (originalFlavors is above, the others are below)
     2. Randomly pick flavors from all four arrays
     3. Return a new array called randomFlavors that has a lenght of 31
 
