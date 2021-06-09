@@ -161,9 +161,18 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(array, string){
-    let removedFlavor = array.indexOf(string);
-    array.splice(removedFlavor, 1);
+// function removeFlavorByName(array, string){
+//     let removedFlavor = array.indexOf(string);
+//     array.splice(removedFlavor, 1);
+//     return array;
+// }
+
+function removeFlavorByName(array, flavor) {
+    for(let i = 0; i < array.length; i++) {
+        if(array[i] === flavor) {
+            array.splice(i, 1);
+        }
+    }
     return array;
 }
 
